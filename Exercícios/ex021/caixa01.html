@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{ /*box-level*/
+            background-color: burlywood;
+
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkblue;
+            /*border: width style color (border: 10 px solid; darkblue)*/
+            
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            /*padding: top right left bottom (padding: 20px, 20px, 20px, 20px -- ou padding: 20px 20px -- ou padding: 20px.)*/
+            
+            margin-top: 40px;
+            margin-right: 20px ;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            /*margin: top right left bottom (margin: 40px, 20px, 20px, 20px -- ou margin: auto.)*/
+            
+            outline-width: 5px;
+            outline-style: dotted;
+            outline-color: brown;
+            /*outline: width style color (outline: 5px dotted brown)*/
+            
+            /*Shorthand
+            border: width style color (border: 10 px solid; darkblue)
+            padding: top right left bottom (padding: 20px, 20px, 20px, 20px -- ou padding: 20px 20px -- ou padding: 20px.)
+            margin: top right left bottom (margin: 40px, 20px, 20px, 20px -- ou margin: auto.)
+            outline: width style color (outline: 5px dotted brown)
+
+            border: 10 px solid; darkblue;
+            padding: 20px;
+            margin: 40px, 20px, 20px, 20px
+            outline: 5px dotted brown
+            */
+        }
+
+        a{ /*inline-level*/
+            border-width: 5px;
+            border-style: dashed;
+            border-color: red;
+
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplos de caixas box-level</h1>
+    <p>Os parágrafos são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona na prática.</p>
+
+    <p><img src="imagem/boxmodel1.png" alt="box model 1"></p>
+
+    <p><img src="imagem/boxmodel2.png" alt="box model 2"></p>
+    
+</body>
+</html>

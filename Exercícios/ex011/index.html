@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Vamos tentar abrir está imagem em vários dispositivos diferentes ou até aumente e diminua o tamanho do navegador. Veja o que acontece com a imagem.</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" srcset="" type="image/png">
+
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <!--Os usuário se incomoda muito com imagens que precisa fazer rolagem lateral, isso faz com que ele saia do site, chamado de bounce rate = taxa de rejeição.
+    
+    Quando o usuário sai, isso é um bounce rate, uma alta taxa de rejeição. Com isso, o google deixa de recomendar a página.
+    
+    O source deve ser colocado de cima para baixo (ou vice-versa) da menor para a maior. O source permite mudar automaticamente a imagem de acordo com o tamanho da tela do dispositivo, por isso deve colocar em ordem crescente.
+
+    Vale a pena iniciar como a imagem maior, em IMG SRC, e depois ir subindo com o SOURCE de forma decrecente.
+    
+    Se inverter o source ele não reconhece.
+    
+    Vale colocar uns 50px a mais no width para ter uma sobre ao mover e acompanhar a barra de rolagem. Se não colocar a barra de rolagem aparecem bem na linha da imagem, se coloca os 50px a barra de rolagem aparece um pouco antes da imagem. -->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Aprendento a inserir e reproduzir áudio em HTML.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/minha-apresentacao.mp3" type="audio/mpeg">
+
+        <source src="midia/minha-apresentacao.ogg" type="audio/ogg">
+
+        <source src="midia/minha-apresentacao.wav" type="audio/wav">
+
+        <p>Infelizmente o seu navegador não consegue carregar o áudio. <a href="midia/minha-apresentacao.mp3"></a>Clique aqui para baixar o arquivo MP3 e reproduzir no seu computador.</p>
+    </audio>
+    
+    <!--Podemos colocar um audio em mp3 para ser reproduzido dentro do site.
+    
+    Pode usar vários tipos de formato de áudio. No entando deve colocá-los para carregar em ordem de prioridade, como no exemplo, MP3, OGG e WAV. O buscador prioriza a reprodução do primeiro para depois ir para os outro. O WAV é o mais pesado, tem que tentar não colocá-lo.-->
+
+    
+</body>
+</html>

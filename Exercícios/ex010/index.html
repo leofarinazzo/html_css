@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://www.linkedin.com/in/leonardofarinazzo/" target="_blank" rel="external">perfil profissional de engenharia de software</a> no linkedin.</p>
+       
+    <p>Você também pode acessar o meu <a href="https://www.instagram.com/leofarinazzo.fisio/" target="_blank" rel="external"> perfil profissional de fisioterapia</a> no Instagram.</p>
+
+     <!--Deve-se colocar os parâmetro target="_blank" e rel="external" para que ao clicar o usuário seja direcionado a uma nova aba(target > _blank) e para o site externo (rel=external). A não inserção desse direcionamento externo faz com que abra o site na mesma aba, com isso a tendência é que o usuário não retorne ao site de origem.-->
+    
+    <h1>Usando link internos</h1>
+    <p>Aqui, você está na primeira página do meu site. Para ir para segunda página, basta <a href="pag002.html" target="_self" rel="next">clicar aqui</a>.</p>   
+
+    <p>Caso queira saber dos últimos acontecimento, entre na tereira página, à página de notícias. Para isso, basta <a href="noticias/pag003.html" rel="next">clicar aqui</a>.</p>
+    
+    <!--Usa-se a rel > next (próxima) e prev (anterior). Não tem rel > interno.
+
+    Para buscar um link interno que esteja dentro do uma pasta, essa basta tem que está na mesma pasta do index.
+
+    Eu posso botar um target para que se abra na própria página, na mesma aba. Usando o parâmetro _SELF. Mas também posso tirar o target e deixar sem ele, isso também faz com que eu abra na mesma aba. Na segunda página é um exemplo com target, e a da terceira está sem target.-->    
+
+    <h1>Links para download</h1>
+    <h2>Livros para download</h2>
+    <ul>
+        <li>Matemática Aplicada à Computação em pdf - <a href="livro/livro matematica.pdf" download="Livro matematica">Baixar</a></li>
+        <li>Matemática Aplicada à Computação em zip - <a href="livro/livro matematica zip.zip">Baixar</a></li>
+        <li>Meu Currículo Tech - <a href="livro/cvtech.pdf">Baixar</a></li>
+    </ul>
+
+    <!--Para baixar o pdf no computador, é preciso colocar o parâmetro download e nome do arquivo em pdf. Caso não coloque o pdf abrirá no próprio navegador. 
+    
+    O exemplo do currículo está sem o parâmetro download.-->
+
+</body>
+</html>

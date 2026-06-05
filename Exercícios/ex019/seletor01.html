@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="principal">Criando Sites como HTML e CSS</h1>
+
+    <h1>Aprendendo HTML</h1>
+    <h2 class="basico">HTML Básico</h2>
+    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ad hic tenetur, <span class="basico">quae amet voluptatem nulla iste temporibus</span> dolor illum cumque ullam facere expedita officiis provident. Deleniti assumenda enim eaque?</P>
+    <h2 class="intermediario">HTML Intermediário</h2>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi harum soluta facilis, error asperiores, minima enim explicabo, illo sit nostrum corporis accusantium dolore hic? Rem tempore error provident nihil debitis!</P>
+    <h2 class="avancado">HTML Avançado</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam est a vitae odio, facilis aliquid unde consequatur numquam ut. Rerum dicta sed tempore alias fuga aut. Iste optio laudantium officia.</p>
+
+    <h1 class="destaque">Aprendendo CSS</h1>
+    <h2 class="basico">CSS Básico</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vitae aliquam repellat molestias quos natus enim quibusdam temporibus quas? Non similique aperiam temporibus quasi hic maiores dolore fuga aut iure!</p>
+    <h2 class="intermediario">CSS Intermediário</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae non alias quo. Vitae perspiciatis tempore nostrum, numquam sequi minus ab distinctio aliquid quis qui, maxime quidem debitis explicabo quia! A?</p>
+    <h2 class="avancado destaque">CSS Avançado</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, magni dignissimos. Optio, sint, laboriosam sequi dignissimos rerum fugit adipisci fugiat odio consectetur pariatur autem voluptatem, magnam obcaecati doloribus tenetur error?</p>
+
+    <!--Dentro de um mesmo documento HTML eu so posso usar um ID. Se colocar irá funcionar, mas não está certo. Por isso usa o seletor CLASS, para um mesmo elemento em diferentes locais, eu uso esse seletor. Colocar o nome do seletor de acordo com a função e não pela forma.-->
+
+    <!--A tag SPAN é usada para testacar um trecho somente.-->
+
+    <!-- Consigo colocar ID sozinho, CLASS sozinho e ID e CLASS juntos. No entanto o ID sobrepõe a CLASS, ela tem maior peso. Posso também colocar mais de uma CLASSE, só separa com um espaço.-->
+
+    <!--Hierarquia: 
+    1) Prinmeiro eu cofiguro o genérico (serve para todos h1)
+    2) Depois o que está na CLASS = ele herda o h1 da anterior porem ele é sobreposto pelas estilização que estiver no class (no caso o h1.principal).
+     CLASS é ligado antes e ID é ligado depois
+     genérico > class > id  -->
+    
+</body>
+</html>

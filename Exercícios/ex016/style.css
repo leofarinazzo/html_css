@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Comic+Relief:wght@400;700&family=Finlandica+Text:ital,wght@0,100..900;1,100..900&family=Fredericka+the+Great&display=swap');
+
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #F4F2EE;
+    
+}
+
+main{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #e9e8e5;
+    width: 900px;
+    padding: 10px;
+    margin: auto;    
+}
+
+h1{
+    color: #113E59;
+    text-align: center;
+    text-shadow: 1px 1px 1px #2da2eb5e;
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    /*Shorthand: font: normal 400 3em "Fredericka the Great", serif;*/
+}
+
+h2{
+    color: #0190CC;
+}
+
+p{
+    text-align: justify;
+}

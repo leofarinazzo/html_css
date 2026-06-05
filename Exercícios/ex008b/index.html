@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando document.getElementById('teste') é escrito em linguagem JavaScript.</p>
+
+    <!--Neste tipo de formatação, o texto não ocupa o mesmo espaço lateral entre às letras, isso porque elas não são monoespaçadas, isso dificulta a leitura do código-->
+
+    <!--Inserindo a tag CODE faz com que as letras ficam com a fonte monoespaçada facilitando a leitura do código-->
+
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+
+    <code>
+        num = int(input ('Digite um número'))
+        if num % 2 == 0;
+            print(f'O número {num} é PAR)
+        else:
+            print(f'O número {num} é ÍMPAR)
+        print('Fim do programa')
+    </code>
+
+    <!--A tag CODE faz com que o código em dentação-->
+
+    <pre>
+        <code>
+            num = int(input ('Digite um número'))
+            if num % 2 == 0;
+                print(f'O número {num} é PAR)
+            else:
+                print(f'O número {num} é ÍMPAR)
+            print('Fim do programa')
+        </code>
+    </pre>
+    <!--Quando se coloca e tag PRE (pré-formatação) a mesma devolve a dentação do código. Tudo que é colocado dentro da tag PRE, mantem a foramatação considerando todos conteúdos-->
+
+    <pre>
+        <code>
+    num = int(input ('Digite um número'))
+    if num % 2 == 0;
+        print(f'O número {num} é PAR)
+    else:
+        print(f'O número {num} é ÍMPAR)
+    print('Fim do programa')
+        </code>
+    </pre>
+    <!-- Para organizar o código na linha à esquerda deve-se selecionar o código e depois segurar as a tecla "shift" e ir clicando na tecla "tap" para deslocar para esquerda. E para deslocar para direita deve-se selecionar o código e apertar somente a tecla "tab"-->
+    
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q>.</p>
+
+    <!-- O uso da tag Q sinaliza semanticamente uma citação. Não se deve escrever as aspas quando quer dar um sentido para o trecho selecionado para a citação.-->
+
+    <h2>Citações completas</h2>
+    <p>No livro "Quarto de despejo", Maria Carolina de Jesus reflete dizendo:</p>
+    <blockquote cite="https://www.coletivoleitor.com.br/uploads/demos/quarto-de-despejo.pdf">
+        Aqui, todas impricam comigo. Dizem que falo muito bem. Que sei atrair os homens. (…) Quando fco nervosa não gosto de discutir. Prefro escrever. Todos os dias eu escrevo. Sento no quintal e escrevo.
+    </blockquote>
+
+    <!--A tag BLOCKQUOTE faz um recuo para citações mais longas e deslocadas horizontalmente. Ainda dentro do BLOCKQUOTE eu posso incluir um parâmetro CITE para citação escrevendo a localicação da mesma. A inserção do link da citação eu direciono os direitos daquela citação-->
+
+    <h2>Abreviações</h2>
+    >Estou estudando <abbr title="Hipertext Markup Language">HTML</abbr> e <abbr title="Cascating Style Sheets">CSS</abbr>. Estou achando top demais.
+
+    <!--Eu posso dizer para os visitantes e mecanismos de busca o que significa as siglas colocando a tag ABBR. Isso coloca um subblinado e quando coloca o mouse em cima aparece o significado da sigla.-->
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Aqui o texto ficará invertido, ou seja, de trás para frente.</bdo></p>
+
+    <p><bdo dir="ltr">Aqui o texto volta ao normal.</bdo></p>    
+</body>
+</html>
