@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;            
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th, td{
+            border: 1px solid purple;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabelas</h1>
+    
+    <table>
+        <thead>
+            <caption>
+                Brawlers Favoritos
+            </caption>
+            <tr>
+                <th>Grupos</th>
+                <th>Nomes</th>
+                <th colspan="3">Brawlers</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Jacky</td>
+                <td>Juju</td>
+                <td>Lumi</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Mico</td>
+                <td>Melodie</td>
+                <td>Pam</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Rosa</td>
+                <td>Tara</td>
+                <td>Emz</td>
+            </tr>
+            <tr>
+                <th rowspan="3">Homem</th>
+                <td>Bruno Mendonça</td>
+                <td>Carl</td>
+                <td>Cold</td>
+                <td>Otis</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Draco</td>
+                <td>El Primo</td>
+                <td>Eve</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Gray</td>
+                <td>Gigi</td>
+                <td>Squeak</td>
+            </tr>                       
+        </tbody>
+    </table>
+</body>
+</html>

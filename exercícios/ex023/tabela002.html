@@ -10,10 +10,18 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;            
         }
 
+        caption{
+            font-size: 1.3em;
+            font-weight: bold ;
+            padding: 10px;
+            background-color: beige;
+        }
+
         table {
             width: 400px;
             height: 70px; 
             border-collapse: collapse;
+            position: relative;
         }
 
         th, td {
@@ -21,9 +29,21 @@
             padding: 5px;            
         }
 
+        tbody > tr:nth-child(2n){
+            background-color: beige;
+        }
+
+
         thead, tfoot {
             background-color: grey;
             color:whitesmoke;
+        }
+
+        thead > tr >th{
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+
         }
 
         td.num {
@@ -37,10 +57,12 @@
     <h1>Uso de tabelas grandes</h1>
 
     <table>
+        <caption>População das Unidades Federativas</caption>
+
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 90px;">População</th>
             </tr>
         </thead>
 
@@ -183,12 +205,13 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num">213 421 037</td>
             </tr>
         </tfoot>
     </table>
     <p>*Dados de 2025. Fonte:<a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank">Wikipédia</a> </p>   
     
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique laudantium tenetur reprehenderit. Quos ratione neque aspernatur. Quas, quia. Voluptas ducimus consequatur libero dolore est iusto eos consequuntur repudiandae vitae. Libero!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut veniam delectus repudiandae molestias et, debitis itaque cumque architecto praesentium facere recusandae corporis nemo consectetur obcaecati explicabo culpa nisi doloremque ipsum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo asperiores vitae necessitatibus deserunt labore, maxime consequatur minima, quaerat numquam quae doloremque. In incidunt ipsa molestiae vel consequuntur! Ratione, voluptatem provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium velit odio amet, voluptates error cupiditate deserunt voluptate voluptas deleniti alias, dolore nemo quae ea! Soluta perferendis atque eum blanditiis non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus, deleniti neque, voluptate doloremque animi qui pariatur aliquam ut laudantium nihil sunt dignissimos, aspernatur expedita debitis nobis. Temporibus, quod non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, laboriosam maxime. Totam maiores exercitationem illum porro, unde modi molestias quibusdam dolore! Molestiae, in. Quaerat ex suscipit debitis necessitatibus est quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cumque accusamus deserunt quasi laboriosam amet iure odio atque voluptates accusantium animi, aspernatur, saepe ducimus quibusdam labore voluptatum voluptatibus doloremque explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique laudantium tenetur reprehenderit. Quos ratione neque aspernatur. Quas, quia. Voluptas ducimus consequatur libero dolore est iusto eos consequuntur repudiandae vitae. Libero!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut veniam delectus repudiandae molestias et, debitis itaque cumque architecto praesentium facere recusandae corporis nemo consectetur obcaecati explicabo culpa nisi doloremque ipsum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo asperiores vitae necessitatibus deserunt labore, maxime consequatur minima, quaerat numquam quae doloremque. In incidunt ipsa molestiae vel consequuntur! Ratione, voluptatem provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium velit odio amet, voluptates error cupiditate deserunt voluptate voluptas deleniti alias, dolore nemo quae ea! Soluta perferendis atque eum blanditiis non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus, deleniti neque, voluptate doloremque animi qui pariatur aliquam ut laudantium nihil sunt dignissimos, aspernatur expedita debitis nobis. Temporibus, quod non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, laboriosam maxime. Totam maiores exercitationem illum porro, unde modi molestias quibusdam dolore! Molestiae, in. Quaerat ex suscipit debitis necessitatibus est quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cumque accusamus deserunt quasi laboriosam amet iure odio atque voluptates accusantium animi, aspernatur, saepe ducimus quibusdam labore voluptatum voluptatibus doloremque explicabo.</p>
 </body>
 </html>
